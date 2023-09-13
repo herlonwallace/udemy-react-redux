@@ -6,6 +6,9 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndireraPai";
+//import Input from "./components/comunicacao/formulario/Input";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import Card from "./components/layout/Card";
@@ -18,6 +21,18 @@ export default function App(props) {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+      {/* <Card titulo="#11 - Componente Controlado" color="#e45f56">
+          <Input></Input>
+        </Card> */}
+
+        <Card titulo="#10 - Comunicação Indireta" color="#8bad39">
+          <IndiretaPai></IndiretaPai>
+        </Card>
+
+        <Card titulo="#09 - Comunicação Direta" color="#59323c">
+          <DiretaPai></DiretaPai>
+        </Card>
+
         <Card titulo="#09 - Renderização Condicional" color="#982395">
           <UsuarioInfo usuario={{ nome: "Paulo" }}></UsuarioInfo>
           <UsuarioInfo usuario={{ email: "fe@email.com" }}></UsuarioInfo>
