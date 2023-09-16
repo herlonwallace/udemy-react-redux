@@ -8,12 +8,13 @@ import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndireraPai";
-//import Input from "./components/comunicacao/formulario/Input";
+import Input from "./components/formulario/Input";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import Card from "./components/layout/Card";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
+import Contador from "./components/contador/Contador";
 
 export default function App(props) {
   return (
@@ -21,9 +22,13 @@ export default function App(props) {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
-      {/* <Card titulo="#11 - Componente Controlado" color="#e45f56">
+        <Card titulo="#12 - Contador" color="#424242">
+          <Contador numeroInicial={20}></Contador>
+        </Card>
+
+        <Card titulo="#11 - Componente Controlado" color="#e45f56">
           <Input></Input>
-        </Card> */}
+        </Card>
 
         <Card titulo="#10 - Comunicação Indireta" color="#8bad39">
           <IndiretaPai></IndiretaPai>
