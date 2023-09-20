@@ -15,6 +15,7 @@ import Card from "./components/layout/Card";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
 import Contador from "./components/contador/Contador";
+import Mega from "./components/mega/Mega";
 
 export default function App(props) {
   return (
@@ -22,6 +23,10 @@ export default function App(props) {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+        <Card titulo="#13 - Mega" color="#b9006e">
+          <Mega></Mega>
+        </Card>
+
         <Card titulo="#12 - Contador" color="#424242">
           <Contador numeroInicial={20}></Contador>
         </Card>
