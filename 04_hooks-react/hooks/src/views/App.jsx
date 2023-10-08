@@ -6,20 +6,22 @@ import Menu from "../components/layout/Menu";
 import Content from "../components/layout/Content";
 
 import DataContent, { data } from "../data/DataContext";
+import Store from "../data/Store";
 
 const App = (props) => {
-
-    const [state, setState] = useState(data)
+  const [state, setState] = useState(data);
 
   return (
-    <DataContent.Provider value={{state, setState}}>
-      <div className="App">
-        <Router>
-          <Menu />
-          <Content />
-        </Router>
-      </div>
-    </DataContent.Provider>
+    <Store>
+      <DataContent.Provider value={{ state, setState }}>
+        <div className="App">
+          <Router>
+            <Menu />
+            <Content />
+          </Router>
+        </div>
+      </DataContent.Provider>
+    </Store>
   );
 };
 
